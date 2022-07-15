@@ -1,0 +1,9 @@
+type: reference-docs
+definitionId: hcm
+settings:
+  generateCodeSamples:
+    languages:
+      - lang: curl
+      - lang: JavaScript
+      - lang: Node.js
+      
