@@ -1,5 +1,5 @@
 meta:
-  title: Redocly Training
+  title: UKG Dev Portal
   description: The best API documentation generator ever.
   siteUrl: https://developer-portal-starter.redoc.ly
   keywords: redocly developer portal, api portal starter, api reference docs
@@ -8,48 +8,35 @@ linkChecker:
   severity: warning
   options:
     CheckExternal: false
-logo:
-  image: ./images/logo.png
-  altText: Redocly Training
-toc:
-  enable: true
+
+#toc:
+#  enable: true
+  
 oasDefinitions:
-  petstore: ./openapi/petstore.yaml
+  attendance: ./openapi/Attendance.json
+  hcm: ./openapi/Hcm.json
   # add links to definitions in our API registry by using a fully qualified URL.
-stylesheets:
-  - https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap
-  - https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700&display=swap
-#analytics:
-  # ga:
-  # note that GA doesn't work in the development environment
-  #  trackingId: UA-45997213-1
-#scripts:
-#  - ./static/intercom.js
+
+#stylesheets:
+#  - https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap
+#  - https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700&display=swap
+
+scripts:
+  - ./static/js/pendoSnippet.js
+
+logo:
+  image: ./images/logo.jpg
+  altText: UKG
+
 nav:
-
-  - label: Training exercises
+  - label: Home
     page: developer-portal/index.md
-
-  - label: External docs
-    icon: ./images/redocly-icon-white.png
-    href: https://redoc.ly/docs/developer-portal/introduction/
-
+  - label: Docs
+    page: developer-portal/ConceptualDocsMVP10/Docs/Authentication/authentication.markdown
+    icon: images/redocly-icon-white.png
+  - label: External Link
+    href: 'https://google.com'
   - search: true
 
 footer:
-  copyrightText: Copyright © Redocly 2019-2021. All right reserved.
-  columns:
-    - group: Legal
-      items:
-        - label: Terms of Use
-          href: 'https://redoc.ly/subscription-agreement/'
-        - label: Privacy Notice
-          href: 'https://redoc.ly/privacy-notice/'
-        - label: Cookie Notice
-          href: 'https://redoc.ly/cookie-notice/'
-    - group: Support
-      items:
-        - label: FAQ
-          page: faq.md
-        - label: Contact us
-          page: contact.mdx
+  copyrightText: © 2018 Kronos. All rights reserved
